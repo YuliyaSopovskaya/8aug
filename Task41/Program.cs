@@ -5,18 +5,23 @@
 // сплит метод
 // string[] str = Console.ReadLine().Split(); 3 4 5 6 7
 
-
 Console.Write("Введите числа через пробел: ");
-
 int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
-int count = 0;
- 
-for (int i = 0; i < arr.Length; i++)
-{
-    if (arr[i] > 0)
-    {
-        count++;
-    }
-}
- 
+int count = arr.Count(x => x > 0);
 Console.WriteLine($"Кол-во чисел больше 0: {count}");
+
+// Console.Write("Введите числа через пробел: ");
+
+// int[] arr = Array.ConvertAll(Console.ReadLine().Split(), int.Parse);
+// int count = 0;
+ 
+// for (int i = 0; i < arr.Length; i++)
+// {
+//     if (arr[i] > 0)
+//     {
+//         count++;
+//     }
+// }
+ 
+// Console.WriteLine($"Кол-во чисел больше 0: {count}");
+
