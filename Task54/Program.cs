@@ -6,12 +6,13 @@
 // В итоге получается вот такой массив:
 // 7 4 2 1
 // 9 5 3 2
-// 8 4 4 2
+// 8 4 4 2 
+// сортировкой
 
 Console.WriteLine($"Введите размер массива mxn и диапазон случайных значений:");
 int m = InputNumbers("Введите m: ");
 int n = InputNumbers("Введите n: ");
-int range = InputNumbers("Введите диапазон: от 1 до ");
+int range = InputNumbers("Введите диапазон чисел: от 1 до ");
 
 int[,] array = new int[m, n];
 CreateArray(array);
